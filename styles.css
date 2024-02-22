@@ -1,0 +1,40 @@
+
+/* HEADER BANNER */
+
+#header{
+    display:flex;
+    border: 2px solid black;
+    align-items: center; /*aligns vertically*/
+}
+
+#header .logo{
+    border: 2px solid black;
+    text-align: center;
+    flex: 1;
+    margin-left: 100px;
+    margin-right: 50px;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+#header .logo h2{
+    margin:0;
+}
+
+.links ol{
+    border: 2px solid black;
+    display:flex;
+    list-style-type: none;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+.links ol li{
+    border: 2px solid black;
+    flex: auto;
+    margin: 5px;
+}
+
+/* SHOWCASE */
