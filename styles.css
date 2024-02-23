@@ -38,3 +38,47 @@
 }
 
 /* SHOWCASE */
+
+#show-case {
+    display: flex;
+    border: 2px solid black;
+    flex-direction: row;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.message, .image{
+    flex: 1;
+    border: 2px solid black;
+}
+
+.image{
+    flex: 0.1 1 0; /* the image growth factor will shrink to its size of width*/
+}
+
+.message{
+    padding-left: 50px;
+    display:flex;
+    flex-direction: column;
+}
+
+.message p{
+    border: 2px solid black;
+    line-height: 15px;
+    margin-top:-15px;
+}
+
+.message h1 {
+    line-height: 30px;
+}
+
+.message h3{
+    background-color: #3882F6;
+    border-radius: 5px;
+    margin-right: 300px;
+    margin-top:-10px;
+    text-align: center;
+}
+
