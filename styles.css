@@ -4,31 +4,20 @@
 #header{
     display:flex;
     border: 2px solid black;
-    align-items: center; /*aligns vertically*/
+    justify-content: center; /*aligns vertically*/
+    align-content: center;
 }
 
-#header .logo{
-    border: 2px solid black;
-    text-align: center;
+.logo .links{
     flex: 1;
-    margin-left: 100px;
-    margin-right: 50px;
     margin-top:10px;
     margin-bottom: 10px;
-}
-
-#header .logo h2{
-    margin:0;
 }
 
 .links ol{
     border: 2px solid black;
-    display:flex;
+    display: flex;
     list-style-type: none;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-top:10px;
-    margin-bottom: 10px;
 }
 
 .links ol li{
@@ -45,17 +34,12 @@
     flex-direction: row;
     padding-top: 20px;
     padding-bottom: 20px;
-    padding-left: 100px;
-    padding-right: 100px;
+    align-content: center;
 }
 
 .message, .image{
     flex: 1;
     border: 2px solid black;
-}
-
-.image{
-    flex: 0.1 1 0; /* the image growth factor will shrink to its size of width*/
 }
 
 .message{
@@ -81,4 +65,6 @@
     margin-top:-10px;
     text-align: center;
 }
+
+/* INFO SECTION */
 
