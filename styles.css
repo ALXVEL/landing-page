@@ -1,70 +1,183 @@
 
-/* HEADER BANNER */
-
-#header{
-    display:flex;
-    border: 2px solid black;
-    justify-content: center; /*aligns vertically*/
-    align-content: center;
+* {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.logo .links{
-    flex: 1;
-    margin-top:10px;
-    margin-bottom: 10px;
+/* HEADER BANNER */
+#header{
+    display:flex;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: #1F2937;
+}
+
+.logo{
+    flex:1;
+}
+
+.logo h2{
+    font-size: 24px;
+    color: #f9faf8;
+}
+
+.links{
+    flex:1;
 }
 
 .links ol{
-    border: 2px solid black;
-    display: flex;
+    display: flex; /*default is horizonal*/
     list-style-type: none;
-}
-
-.links ol li{
-    border: 2px solid black;
-    flex: auto;
-    margin: 5px;
+    justify-content: space-between;
+    padding-left: 20%;
+    margin-top: 3.5%;
+    color: #e5e7eb;
+    font-size: 18px;
 }
 
 /* SHOWCASE */
 
 #show-case {
     display: flex;
-    border: 2px solid black;
     flex-direction: row;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     align-content: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: #1F2937;
 }
 
 .message, .image{
     flex: 1;
-    border: 2px solid black;
+    padding: 0;
 }
 
 .message{
-    padding-left: 50px;
     display:flex;
     flex-direction: column;
 }
 
 .message p{
-    border: 2px solid black;
-    line-height: 15px;
     margin-top:-15px;
+    color: #e5e7eb;
+    font-size: 18px;
 }
 
 .message h1 {
-    line-height: 30px;
+    color: #f9faf8;
+    font-size: 48px;
+    font-weight: bolder;
 }
 
 .message h3{
     background-color: #3882F6;
     border-radius: 5px;
-    margin-right: 300px;
+    margin-right: 75%;
     margin-top:-10px;
     text-align: center;
 }
 
 /* INFO SECTION */
 
+#info{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#info ol{
+    flex:1;
+    display: flex;
+    gap: 50px;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.image-box{
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+#info h2{
+    color: #1f2937;
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+.text{
+    width: 100px;
+}
+
+/* TESTIMONIAL */
+
+#testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e5e7eb;
+}
+
+#testimonial .quote{
+    margin: 0px;
+    margin-top:5%;
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+}
+
+#testimonial .from{
+    margin: 0px;
+    flex: 1;
+    margin-left:20%;
+    margin-bottom: 5%
+}
+
+/* SIGN UP */
+
+#sign-up {
+    display:flex;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #3882f6;
+    color:#f9faf8;
+}
+
+#background-sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5em 0;
+}
+
+#sign-up .sign-text{
+    flex: 3 1 0;
+}
+
+#sign-up .sign-button{
+    flex: 1;
+    text-align: center;
+}
+
+#sign-up .sign-button p{
+    border:#f9faf8 solid 2px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+    border-radius: 5px;
+}
+
+/* COPYRIGHT */
+
+#copyright{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1F2937;
+    color:#f9faf8;
+}
